@@ -1,0 +1,117 @@
+/*
+	Author : sahil Gupta
+	Github : https://github.com/techhysahil
+	FileName : advanceItraDropdown.scss
+	Creation Date : 24th June, 2k18
+*/
+.Itra-dropdown-wrapper{
+	display: inline-block;
+    height: 30px;
+    position: relative;
+    background-color: #EAECF1;
+    border-radius: 2px;
+    vertical-align: middle;
+    padding: 0 10px;
+    border: 1px solid #E1E6E9;
+    z-index: 1;
+    min-width: 60px;
+    &.disable{
+        pointer-events: none;
+        opacity: 0.6;
+    }
+    .itra-dropdown{
+    	&.open{
+
+    	}
+    	&.close{
+    		display: none !important;
+    	}
+    }
+    .dropdown-title{
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+        user-select: none;
+        cursor: pointer;
+        .value{
+            font-size: 14px;
+        }
+        fa{
+            color: #959EB1;
+        }
+        .down-arrow{
+            float: right;
+            position: relative;
+            top: 4px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+    }
+    .itra-dropdown{
+        position: absolute;
+        top: calc(100% + 8px);
+        background-color: #fff;
+        border: 1px solid #E1E6E9;
+        border-radius: 2px;
+        left: 0;
+        text-align: left;
+        min-width: 150px;
+        .input-wrapper{
+            border-bottom: 1px solid #dfe4e7;
+            position: relative;
+            input{
+                width: 100%;
+                height: 30px;
+                border: 0px;
+                background-color: #FFFFFF;
+                font-size: 12px;
+                color: #80859B;
+                padding: 0px 15px;
+                &:focus{
+                    outline:0px;
+                }
+            }
+            .search-icon{
+                position: absolute;
+                right: 4px;
+                color: #9fa9af;
+                top: 5px;
+                font-size: 24px;
+            }
+        }
+    }
+    .list-wrapper{
+        max-height : 187px;
+        overflow: auto;
+    }
+    .list-item{
+        padding: 6px 10px;
+        border-bottom: 1px solid #e1e6e9;
+        cursor: pointer;
+        background-color: #FFFFFF;
+        color: #999;
+        &.list-label{
+            color: #333;
+            cursor: auto;
+            &:hover{
+                background-color : #FFFFFF;
+            }
+        }
+        .fa{
+            display: inline;
+            color: #454545;
+        }
+        .tag{
+            margin: 0 8px;
+            font-size: 14px;
+            color: #454545;
+            white-space: nowrap;
+        }
+        &:hover{
+            background-color : #eaecf1;
+        }
+        &.sublist{
+            padding-left: 25px;
+        }
+    }
+}
