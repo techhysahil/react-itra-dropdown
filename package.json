@@ -1,0 +1,32 @@
+{
+  "name": "react-itra-dropdown",
+  "version": "1.0.0",
+  "description": "React component that allow you to slect single options from set of options.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techhysahil/react-itra-dropdown"
+  },
+  "keywords": [
+    "react",
+    "dropdown",
+    "react-select",
+    "react-dropdown"
+  ],
+  "author": {
+    "name": "Sahil Gupta",
+    "url": "https://github.com/techhysahil"
+  },
+  "bugs": {
+    "url": "https://github.com/techhysahil/react-itra-dropdown/issues"
+  },
+  "peerDependencies": {
+    "react": "^0.14.7 || ^15.0.0-0",
+    "react-dom": "^0.14.7 || ^15.0.0-0"
+  },
+  "homepage": "https://github.com/techhysahil/react-itra-dropdown",
+  "license": "ISC"
+}
